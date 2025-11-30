@@ -28,7 +28,7 @@ Varkun is the orc homeland: volcanic plains and ritual forges, this page is a st
 - 
 - 
 - 
-- footer — team, year and links
+- footer - team, year and links
 
 ## Git & branches
 We worked on feature branches and merged to main:
@@ -39,4 +39,5 @@ We worked on feature branches and merged to main:
 
 **Repository:**  
 **Pge:**
+
 
