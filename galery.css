@@ -40,3 +40,46 @@
 .window-buttons button:hover {
     filter: brightness(1.25);
 }
+
+.toolbar {
+    background: #ffffff;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar button {
+    padding: 5px 12px;
+    border: 1px solid #b6b6b6;
+    background: linear-gradient(#ffffff, #e6e6e6);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.toolbar button:hover {
+    border-color: #8a8a8a;
+    background: linear-gradient(#ffffff, #dcdcdc);
+}
+
+.toolbar .active{
+    background: #c8e6c9;
+    border-color: #98c89d;
+}
+
+.url-bar {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.add-tab {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
