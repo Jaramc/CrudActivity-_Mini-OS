@@ -13,6 +13,11 @@ body {
 /* Header principal */
 header {
     border-top: 3px solid #00AEE2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Barra de título - Parte alta */
@@ -22,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 #inicio h4 {
@@ -35,13 +41,57 @@ header {
 header > div:nth-child(2) {
     background: linear-gradient(to bottom, #C7DAE8 0%, #DEE8F3 50%, #F4F8FB 100%);
     padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Contenedor de barra de direcciones */
+header > div:nth-child(2) > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+    background: white;
+    border: 1px solid #9CB9D3;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+/* Input de dirección */
+header > div:nth-child(2) > div:nth-child(4) input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 13px;
+}
+
+/* Contenedor de búsqueda */
+header > div:nth-child(2) > div:nth-child(5) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: white;
+    border: 1px solid #9CB9D3;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+/* Input de búsqueda */
+header > div:nth-child(2) > div:nth-child(5) input {
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 13px;
+    width: 150px;
 }
 
 /* Botones generales */
 button {
     background: transparent;
-    border: none !important;
-    font-size: 0;
+    border: 1px #9CB9D3;
+    font-size: 0 ;
     cursor: pointer;
 }
 
