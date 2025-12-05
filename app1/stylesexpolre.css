@@ -1,7 +1,89 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F4F8FB;
+}
 
+/* Header principal */
+header {
+    border-top: 3px solid #00AEE2;
+}
+
+/* Barra de título - Parte alta */
+#inicio {
+    background: #C7DAE8;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio h4 {
+    color: #003d5c;
+    font-size: 14px;
+    font-weight: normal;
+    flex: 1;
+}
+
+/* Barra de navegación - Parte media */
+header > div:nth-child(2) {
+    background: linear-gradient(to bottom, #C7DAE8 0%, #DEE8F3 50%, #F4F8FB 100%);
+    padding: 8px;
+}
+
+/* Botones generales */
 button {
     background: transparent;
     border: none !important;
-    font-size:0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+/* Botones de la ventana (minimizar, maximizar, cerrar) */
+#inicio button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Botones de navegación (atrás, adelante) */
+header > div:nth-child(2) > button:nth-child(1) img,
+header > div:nth-child(2) > button:nth-child(2) img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Botones de despliegue (dropdown) */
+button img[alt="Deployment"] {
+    width: 16px;
+    height: 16px;
+}
+
+/* Icono de búsqueda */
+button img[alt="look for"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Icono de recarga */
+button img[alt="Reload"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Icono de error */
+button img[alt="mistaque"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Logo de Internet Explorer en la barra de direcciones */
+div img[alt=""] {
+    width: 18px;
+    height: 18px;
 }
