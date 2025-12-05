@@ -1,0 +1,42 @@
+.titlebar {
+    background: linear-gradient(#3a6ea5, #2b4f75);
+    padding: 6px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.titlebar .title {
+    font-size: 14px;
+}
+
+.window-buttons { 
+    display: flex;
+    gap: 6px;
+}
+
+.window-buttons button {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #4a4a4a;
+    border-radius: 3px;
+    background: #e6e6e6;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window-buttons button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.window-buttons button:hover {
+    filter: brightness(1.25);
+}
