@@ -3,6 +3,9 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 button {
@@ -46,9 +49,10 @@ button:active {
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
-    width: 1750px;
+    width: 100%;
+    max-width: 1750px;
     height: 34px;
-    left: 35px;
+    margin: 0 auto;
 }
 
 .icon {
@@ -65,9 +69,9 @@ button:active {
 }
 
 .pos2 {
-    position: relative;
-    left: 1592px;
-    bottom: 75px;
+    position: absolute;
+    right: 90px;
+    top: 3px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     border: 1px #a7a7a7;
@@ -92,15 +96,15 @@ button:active {
 }
 
 .pos3 {
-    position: relative;
-    left: 1596px;
-    bottom: 75px;
+    position: absolute;
+    right: 50px;
+    top: 3px;
 }
 
 .pos4 {
-    position: relative;
-    left: 1600px;
-    bottom: 75px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     border: 1px #a7a7a7;
@@ -118,9 +122,10 @@ button:active {
     border: 1px solid #c6c6c6;
     border-radius: 3px;
     background: linear-gradient(#FFFFFF, #e5e5e5);
-    width: 1750px;
+    width: 100%;
+    max-width: 1750px;
     height: 34px;
-    left: 35px;
+    margin: 0 auto;
 }
 
 .nav1 {
@@ -164,8 +169,10 @@ button:active {
 
 .video {
     position: relative;
-    width: 1750px;
-    left: 35px;
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+    display: block;
 }
 
 .container4 {
@@ -173,10 +180,11 @@ button:active {
     border: 1px solid #c6c6c6;
     border-radius: 3px;
     background: linear-gradient(#FFFFFF, #e5e5e5);
-    width: 1750px;
+    width: 100%;
+    max-width: 1750px;
     height: 80px;
     bottom: 10px;
-    left: 35px;
+    margin: 0 auto;
 }
 
 .img1 {
@@ -221,10 +229,10 @@ button:active {
 }
 
 .img7 {
-    position: relative;
+    position: absolute;
     width: 60px;
     top: 8px;
-    left: 1150px;
+    right: 150px;
 }
 
 .vol {
@@ -233,7 +241,7 @@ button:active {
 
 .vlc-bar {
     position: relative;
-    width: 1719px;
+    width: calc(100% - 20px);
     height: 6px;
     appearance: none;
     left: 10px;
@@ -280,11 +288,11 @@ button:active {
 .volume-container {
     width: 120px;
     height: 30px;
-    left: 1600px;
+    right: 20px;
     bottom: 40px;
     background: #ccc;
     border: 1px solid #666;
-    position: relative;
+    position: absolute;
 }
 
 .volume-fill {
