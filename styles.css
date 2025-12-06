@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-#iconos {
+#icons {
     display: grid;
     grid-template-columns: repeat(auto-fill, 90px);
     grid-auto-flow: column;
@@ -21,8 +21,8 @@ body {
     align-content: start;
 }
 
-#iconos a,
-#iconos button {
+#icons a,
+#icons button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,19 +40,19 @@ body {
     transition: background 0.2s;
 }
 
-#iconos a:hover,
-#iconos button:hover {
+#icons a:hover,
+#icons button:hover {
     background: rgba(173, 216, 230, 0.3);
     border: 1px solid rgba(173, 216, 230, 0.5);
 }
 
-#iconos a:active,
-#iconos button:active {
+#icons a:active,
+#icons button:active {
     background: rgba(100, 149, 237, 0.4);
     border: 1px solid rgba(100, 149, 237, 0.6);
 }
 
-#iconos img {
+#icons img {
     width: 65px;
     height: 65px;
     margin-bottom: 5px;
