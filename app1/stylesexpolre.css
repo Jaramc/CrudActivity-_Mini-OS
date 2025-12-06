@@ -40,6 +40,35 @@ header {
     height: 16px;
 }
 
+#inicio a {
+    background: #EAEEF3;
+    border: 1px solid #C4CEDB;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#inicio a:hover {
+    background: #DDE5F0;
+    box-shadow: 0 0 0 1px #B3C0D3;
+}
+
+#inicio a:active {
+    background: #CBD7EB;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.25);
+    border-color: #9CAAC4;
+}
+
+#inicio a img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
 header > div:nth-child(2) {
     background: linear-gradient(to bottom, #C7DAE8 0%, #DEE8F3 50%, #F4F8FB 100%);
     padding: 8px;
