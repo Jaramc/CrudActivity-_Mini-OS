@@ -82,9 +82,43 @@ footer {
 #footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    gap: 20px;
     padding: 3px 15px;
+}
+
+#taskbar-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+#arrow-btn,
+#signal-btn {
+    background: transparent;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#arrow-btn img,
+#signal-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 11px;
+    color: white;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: rgba(0, 61, 92, 0.6);
+    padding: 5px 10px;
+    border-radius: 3px;
+    line-height: 1.3;
 }
 
 #footer p {
