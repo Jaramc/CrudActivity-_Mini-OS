@@ -69,8 +69,8 @@ button:active {
 
 .pos2 {
     position: absolute;
-    right: 90px;
-    top: 3px;
+    right: 93px;
+    top: -1px;
     background: rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -97,14 +97,14 @@ button:active {
 
 .pos3 {
     position: absolute;
-    right: 50px;
-    top: 3px;
+    right: 46px;
+    top: -1px;
 }
 
 .pos4 {
     position: absolute;
-    right: 10px;
-    top: 3px;
+    right: -1px;
+    top: -1px;
     background: rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -178,7 +178,7 @@ button:active {
 .img7 {
     position: absolute;
     width: 60px;
-    top: 8px;
+    top: 20px;
     right: 150px;
 }
 
@@ -232,7 +232,7 @@ button:active {
     width: 120px;
     height: 30px;
     right: 20px;
-    bottom: 40px;
+    bottom: 20px;
     background: #ccc;
     border: 1px solid #666;
     position: absolute;
