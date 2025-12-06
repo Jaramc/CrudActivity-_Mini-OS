@@ -12,14 +12,12 @@ button {
     font-family: Segoe UI;
     font-size: 14px;
     padding: 5px 10px;
-
     background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 1px #a7a7a7;
+    border: 1px solid #a7a7a7;
     border-radius: 4px;
-
     cursor: pointer;
-
     box-shadow: inset 0 1px 0 #ffffffcc;
     transition: 0.1s;
 }
@@ -48,6 +46,7 @@ button:active {
     border: 1px solid #c6c6c6;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     width: 100%;
     max-width: 1750px;
@@ -73,8 +72,9 @@ button:active {
     right: 90px;
     top: 3px;
     background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 1px #a7a7a7;
+    border: 1px solid #a7a7a7;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: inset 0 1px 0 #ffffffcc;
@@ -106,8 +106,9 @@ button:active {
     right: 10px;
     top: 3px;
     background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 1px #a7a7a7;
+    border: 1px solid #a7a7a7;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: inset 0 1px 0 #ffffffcc;
@@ -128,36 +129,12 @@ button:active {
     margin: 0 auto;
 }
 
-.nav1 {
-    position: relative;
-    top: 3px;
-}
-
-.nav2 {
-    position: relative;
-    top: 3px;
-}
-
-.nav3 {
-    position: relative;
-    top: 3px;
-}
-
-.nav4 {
-    position: relative;
-    top: 3px;
-}
-
-.nav5 {
-    position: relative;
-    top: 3px;
-}
-
-.nav6 {
-    position: relative;
-    top: 3px;
-}
-
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6,
 .nav7 {
     position: relative;
     top: 3px;
@@ -187,45 +164,15 @@ button:active {
     margin: 0 auto;
 }
 
-.img1 {
-    position: relative;
-    width: 40px;
-    top: 8px;
-}
-
-.img2 {
-    position: relative;
-    width: 40px;
-    top: 8px;
-
-}
-
-.img3 {
-    position: relative;
-    width: 40px;
-    top: 8px;
-
-}
-
-.img4 {
-    position: relative;
-    width: 40px;
-    top: 8px;
-
-}
-
-.img5 {
-    position: relative;
-    width: 40px;
-    top: 8px;
-
-}
-
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
 .img6 {
     position: relative;
     width: 40px;
     top: 8px;
-
 }
 
 .img7 {
@@ -245,7 +192,6 @@ button:active {
     height: 6px;
     appearance: none;
     left: 10px;
-
     background: #f2f2f2;
     border: 1px solid #b5b5b5;
     border-radius: 2px;
@@ -260,17 +206,14 @@ button:active {
 
 .vlc-bar::-webkit-slider-thumb {
     appearance: none;
-
     width: 25px;
     height: 12px;
     cursor: pointer;
     background: #e8e8e8;
-
     border: 1px solid #9a9a9a;
     box-shadow: 0 0 0 1px #ffffff inset;
     border-radius: 3px;
     margin-top: -4px;
-
 }
 
 .vlc-bar:hover::-webkit-slider-thumb {
