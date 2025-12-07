@@ -9,6 +9,20 @@ body {
     min-height: 100vh;
 }
 
+#footer button.menu {
+    border-radius: 10px;
+}
+
+#footer button.menu:hover {
+    background: conic-gradient(from 45deg, yellow, blue, red, green);
+}
+
+#footer button.menu:active {
+    background: conic-gradient(from 45deg, yellow, blue, red, green);
+    transform: scale(0.95);
+    border-color: #5ba2ff;
+}
+
 #footer button {
     background: transparent;
     border: 1px transparent;
