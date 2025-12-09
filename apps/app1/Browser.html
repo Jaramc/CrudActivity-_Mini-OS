@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <header>
         <div id=inicio>
             <h4>Internet Explore</h4>
@@ -25,9 +26,9 @@
             <button><img src="imagenes/ie_dropdown_clean.png" alt="Deployment"></button>
             <div>
                 <img src="imagenes/images7explore.jpg" alt="">
-                <input type="text" placeholder="about:Blank">
+                <input type="text" id="urlInput" placeholder="about:Blank">
                 <button><img src="imagenes/ie_dropdown_clean.png" alt="Deployment"></button>
-                <button><img src="imagenes/sync_icon_vertical_28_86ef3f6a.png" alt="Reload"></button>
+                <button onclick="loadUrl()"><img src="imagenes/sync_icon_vertical_28_86ef3f6a.png" alt="Reload"></button>
                 <button><img src="imagenes/Error.png" alt="mistaque"></button>
             </div>
             <div>
@@ -66,6 +67,8 @@
             </div>
         </div>
     </header>
+    <iframe id="browserFrame" src="about:blank"></iframe>
+    <!-- <iframe src="https://bing.com/"></iframe> -->
     <footer>
         <div id="footer">
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
@@ -80,7 +83,46 @@
             <p>100%</p>
             <button><img src="imagenes/sort-down.png" alt="Triangulo"></button>
         </div>
+
     </footer>
+
+    <script>
+        function loadUrl() {
+            const input = document.getElementById('urlInput');
+            const iframe = document.getElementById('browserFrame');
+            let url = input.value.trim();
+
+            // If no protocol, add https://
+            if (url && !url.startsWith('http://') && !url.startsWith('https://') && !url.startsWith('about:')) {
+                url = 'https://' + url;
+            }
+
+            // Try to load the URL
+            if (url) {
+                // Use a proxy service to bypass CORS restrictions
+                iframe.src = url;
+            }
+        }
+
+        // Allow Enter key to load URL
+        document.getElementById('urlInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                loadUrl();
+            }
+        });
+
+        // Update URL input when iframe loads (if accessible)
+        document.getElementById('browserFrame').addEventListener('load', function() {
+            try {
+                const currentUrl = this.contentWindow.location.href;
+                if (currentUrl !== 'about:blank') {
+                    document.getElementById('urlInput').value = currentUrl;
+                }
+            } catch (e) {
+                // Cross-origin restriction - can't access iframe URL
+            }
+        });
+    </script>
 </body>
 
 </html>
