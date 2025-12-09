@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet Explore</title>
+    <title>Blank page- Windows Internet Explore</title>
     <link rel="stylesheet" href="stylesexpolre.css">
-    <link rel="icon" type="image/png" href="/apps/imagenesindex/iexplore_32528.png">
-
 </head>
-
 <body>
-    
     <header>
-        <div id=inicio>
-            <h4>Internet Explore</h4>
+        <div id = inicio>
+            <h4>Blank page- Windows Internet Explore</h4>
             <a href="../../index.html"><img src="imagenes/btn_minimize.png" alt="Minimize"></a>
             <button><img src="imagenes/btn_maximize.png" alt="Maximize"></button>
             <a href="../../index.html"><img src="imagenes/btn_close.png" alt="Delete"></a>
         </div>
-
+        
         <div>
             <button><img src="imagenes/ie_back_circle_clean.png" alt="back"></button>
             <button><img src="imagenes/ie_forward_circle_clean.png" alt="forward"></button>
             <button><img src="imagenes/ie_dropdown_clean.png" alt="Deployment"></button>
             <div>
                 <img src="imagenes/images7explore.jpg" alt="">
-                <input type="text" id="urlInput" placeholder="about:Blank">
+                <input type="text" placeholder="about:Blank">
                 <button><img src="imagenes/ie_dropdown_clean.png" alt="Deployment"></button>
-                <button onclick="loadUrl()"><img src="imagenes/sync_icon_vertical_28_86ef3f6a.png" alt="Reload"></button>
+                <button><img src="imagenes/sync_icon_vertical_28_86ef3f6a.png" alt="Reload"></button>
                 <button><img src="imagenes/Error.png" alt="mistaque"></button>
             </div>
             <div>
-                <input type="text" placeholder="Live Search">
-                <button><img src="imagenes/png-clipart-magnifying-glass-magnifier-search-texture-blue.png"
-                        alt="look for"></button>
+                <input type="text" placeholder="Live Search">                
+                <button><img src="imagenes/png-clipart-magnifying-glass-magnifier-search-texture-blue.png" alt="look for"></button>
                 <button><img src="imagenes/ie_dropdown_clean.png" alt="Deployment"></button>
             </div>
         </div>
         <div>
-            <div id=start>
-                <button><img src="imagenes/star.png" alt="star"></button>
-                <button><img src="imagenes/add.png" alt="plus"></button>
+            <div id = start>
+            <button><img src="imagenes/star.png" alt="star"></button>
+            <button><img src="imagenes/add.png" alt="plus"></button>
             </div>
-            <div id=bar>
-                <button><img src="imagenes/png-clipart-windows-live-for-xp-eternet-explorer-logo-thumbnail.png"
-                        alt="Explore"></button>
-                <p>
-                    <n>Blank Page</n>
-                </p>
+            <div id = bar>
+                <button><img src="imagenes/png-clipart-windows-live-for-xp-eternet-explorer-logo-thumbnail.png" alt="Explore"></button>
+                <p><n>Blank Page</n></p>
             </div>
-            <div id=navegation>
+            <div id = navegation>
                 <button><img src="imagenes/casita.png" alt="Casa"></button>
                 <button><img src="imagenes/sort-down.png" alt="Triangulo"></button>
                 <button><img src="imagenes/wifi-signal.png" alt="Internet"></button>
@@ -67,62 +58,23 @@
             </div>
         </div>
     </header>
-    <iframe id="browserFrame" src="about:blank"></iframe>
-    <!-- <iframe src="https://bing.com/"></iframe> -->
     <footer>
         <div id="footer">
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
+        <iframe src="https://bing.com"></iframe>
+    <!-- <iframe src="https://bing.com/"></iframe> -->n>
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
             <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
-            <button><img src="imagenes/black-square (1).png" alt="Squert"></button>
+            <button><img src="imagenes/black-square (1).png" alt="Squert"></button> 
             <button><img src="imagenes/planet-earth.png" alt="planeta"></button>
-            <p>Internet | Protected Mode: On</p>
+            <p>Internet | Protected Mode: On</p> 
             <button><img src="imagenes/zoom.png" alt="Lupa"></button>
             <p>100%</p>
-            <button><img src="imagenes/sort-down.png" alt="Triangulo"></button>
+            <button><img src="imagenes/sort-down.png" alt="Triangulo"></button>                                                                                                    
         </div>
-
     </footer>
-
-    <script>
-        function loadUrl() {
-            const input = document.getElementById('urlInput');
-            const iframe = document.getElementById('browserFrame');
-            let url = input.value.trim();
-
-            // If no protocol, add https://
-            if (url && !url.startsWith('http://') && !url.startsWith('https://') && !url.startsWith('about:')) {
-                url = 'https://' + url;
-            }
-
-            // Try to load the URL
-            if (url) {
-                // Use a proxy service to bypass CORS restrictions
-                iframe.src = url;
-            }
-        }
-
-        // Allow Enter key to load URL
-        document.getElementById('urlInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                loadUrl();
-            }
-        });
-
-        // Update URL input when iframe loads (if accessible)
-        document.getElementById('browserFrame').addEventListener('load', function() {
-            try {
-                const currentUrl = this.contentWindow.location.href;
-                if (currentUrl !== 'about:blank') {
-                    document.getElementById('urlInput').value = currentUrl;
-                }
-            } catch (e) {
-                // Cross-origin restriction - can't access iframe URL
-            }
-        });
-    </script>
-</body>
-
-</html>
+</bod
+y>
+</html> 
