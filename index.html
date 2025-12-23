@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/apps/imagenesindex/windows_1.png">
+</head>
+
+<body>
+    <!-- <iframe src="apps/app5/video.html" width="000" height="600"></iframe> -->
+    <!-- <iframe src="apps/app3/galery.html" title="Prueba"></iframe> -->
+    <!-- <iframe src="apps/app4/notes.html" title="Prueba"></iframe> -->
+    <!-- <iframe src="apps/app3/galery.html" title="Prueba"></iframe> -->
+    <!-- <iframe src="apps/app1/Browser.html" title="Prueba"></iframe> -->
+
+    <audio autoplay src="apps/imagenesindex/windows-sound-welcome.mp3"></audio>
+    
+    <!-- Container for iframes -->
+    <div id="iframe-container"></div>
+
+    <div id="icons">
+
+        <a href="#"><img src="apps/imagenesindex/encarta.png" alt="encarta">
+            <p>Encarta</p>
+        </a>
+        <a href="#"><img src="apps/imagenesindex/musica.png" alt="Audio">
+            <p>Media Player</p>
+        </a>
+        <a href="#" onclick="openApp('apps/app5/video.html', 'VLC Media Player'); return false;"><img src="apps/imagenesindex/video_icon.png" alt="Video">
+            <p>VLC Media Player</p>
+            <!-- <iframe src="apps/app5/video.html" width="500" height="600"></iframe> -->
+        </a>
+        <a href="#" onclick="openApp('apps/app3/galery.html', 'Gallery'); return false;"><img src="apps/imagenesindex/imageres fotos_72.png" alt="Gallery">
+            <p>Gallery</p>
+        </a>
+        <!-- <iframe src="apps/app3/galery.html" title="Prueba"></iframe> -->
+        <a href="#" onclick="openApp('apps/app4/notes.html', 'Notepad'); return false;"><img src="apps/imagenesindex/block notepad_2.png" alt="Notes">
+            <p>Notepad</p>
+        </a>
+        <a href="#" onclick="openApp('apps/app1/Browser.html', 'Internet Explorer'); return false;"><img src="apps/imagenesindex/iexplore_32528.png" alt="Browser">
+            <p>Internet Exporer</p>
+        </a>
+        <a href="#" onclick="openApp('apps/app2/calculadora.html', 'Calculator'); return false;"><img src="apps/imagenesindex/calculadora.png" alt="Calculator">
+            <p>Calculator</p>
+        </a>
+        <button><img src="apps/imagenesindex/arana.png" alt="Spider">
+            <p>Spider Solitaire</p>
+        </button>
+        <button><img src="apps/imagenesindex/archivos.png" alt="Files">
+            <p>Files</p>
+        </button>
+        <button><img src="apps/imagenesindex/cmd_IDI_APPICON.png" alt="CMD">
+            <p>Terminal</p>
+        </button>
+        <button><img src="apps/imagenesindex/fotos.png" alt="Photos">
+            <p>Video</p>
+        </button>
+        <button><img src="apps/imagenesindex/imageresjuegos_14.png" alt="Games">
+            <p>Games</p>
+        </button>
+        <button><img src="apps/imagenesindex/juegoojitos.png" alt="Game">
+            <p>Purble Place</p>
+        </button>
+        <button><img src="apps/imagenesindex/notas.png" alt="Notes">
+            <p>Note</p>
+        </button>
+        <button><img src="apps/imagenesindex/paint_2.png" alt="Paint">
+            <p>Paint</p>
+        </button>
+        <button><img src="apps/imagenesindex/papelera_55.png" alt="Recycle Bin">
+            <p>Recycle Bin</p>
+        </button>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <button class="menu"><img src="apps/imagenesindex/windows_1.png" alt="Windows"></button>
+            <button><img src="apps/imagenesindex/musica.png" alt="Audio"></button>
+            <button onclick="openApp('apps/app5/video.html', 'VLC Media Player')"><img src="apps/imagenesindex/video_icon.png" alt="Video"></button>
+            <button onclick="openApp('apps/app3/galery.html', 'Gallery')"><img src="apps/imagenesindex/imageres fotos_72.png" alt="Gallery"></button>
+            <button onclick="openApp('apps/app4/notes.html', 'Notepad')"><img src="apps/imagenesindex/block notepad_2.png" alt="Notes"></button>
+            <button onclick="openApp('apps/app1/Browser.html', 'Internet Explorer')"><img src="apps/imagenesindex/iexplore_32528.png" alt="Browser"></button>
+            <button onclick="openApp('apps/app2/calculadora.html', 'Calculator')"><img src="apps/imagenesindex/calculadora.png" alt="Calculator"></button>
+            <div id="taskbar-right">
+                <button id="arrow-btn"><img src="apps/imagenesindex/abajo.png" alt="Triangulo"></button>
+                <button id="signal-btn"><img src="apps/imagenesindex/senal.png" alt="Señal"></button>
+                <div id="clock">
+                    <time datetime="11:30">11:30 AM</time>
+                    <time datetime="2028-08-25">8/25/2018</time>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openApp(url, title) {
+            // Create iframe wrapper
+            const wrapper = document.createElement('div');
+            wrapper.className = 'iframe-wrapper';
+            wrapper.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                max-width: 1000px;
+                height: 80%;
+                background: white;
+                border: 2px solid #00AEE2;
+                border-radius: 8px 8px 0 0;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                z-index: 1000;
+                display: flex;
+                flex-direction: column;
+            `;
+
+            // Create title bar
+            const titleBar = document.createElement('div');
+            titleBar.style.cssText = `
+                background: linear-gradient(to bottom, #C7DAE8 0%, #DEE8F3 50%, #F4F8FB 100%);
+                padding: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #00AEE2;
+                cursor: move;
+                user-select: none;
+            `;
+            titleBar.innerHTML = `
+                <span style="font-weight: bold; color: #333;">${title}</span>
+                <button onclick="this.closest('.iframe-wrapper').remove()" style="
+                    background: #E81123;
+                    color: white;
+                    border: none;
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-weight: bold;
+                ">×</button>
+            `;
+
+            // Create iframe
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.style.cssText = `
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: white;
+            `;
+
+            // Assemble
+            wrapper.appendChild(titleBar);
+            wrapper.appendChild(iframe);
+            document.getElementById('iframe-container').appendChild(wrapper);
+
+            // Make draggable
+            let isDragging = false;
+            let currentX, currentY, initialX, initialY;
+
+            titleBar.addEventListener('mousedown', dragStart);
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('mouseup', dragEnd);
+
+            function dragStart(e) {
+                initialX = e.clientX - wrapper.offsetLeft;
+                initialY = e.clientY - wrapper.offsetTop;
+                isDragging = true;
+            }
+
+            function drag(e) {
+                if (isDragging) {
+                    e.preventDefault();
+                    currentX = e.clientX - initialX;
+                    currentY = e.clientY - initialY;
+                    wrapper.style.left = currentX + 'px';
+                    wrapper.style.top = currentY + 'px';
+                    wrapper.style.transform = 'none';
+                }
+            }
+
+            function dragEnd() {
+                isDragging = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

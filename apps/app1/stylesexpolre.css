@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F4F8FB;
+    padding-bottom: 30px;
+}
+
+header {
+    border-top: 3px solid #00AEE2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#inicio {
+    background: #C7DAE8;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#inicio h4 {
+    color: #003d5c;
+    font-size: 14px;
+    font-weight: normal;
+    flex: 1;
+}
+
+#inicio button img {
+    width: 16px;
+    height: 16px;
+}
+
+#inicio a {
+    background: #EAEEF3;
+    border: 1px solid #C4CEDB;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#inicio a:hover {
+    background: #DDE5F0;
+    box-shadow: 0 0 0 1px #B3C0D3;
+}
+
+#inicio a:active {
+    background: #CBD7EB;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.25);
+    border-color: #9CAAC4;
+}
+
+#inicio a img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+header > div:nth-child(2) {
+    background: linear-gradient(to bottom, #C7DAE8 0%, #DEE8F3 50%, #F4F8FB 100%);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+header > div:nth-child(2) > button:nth-child(1) img,
+header > div:nth-child(2) > button:nth-child(2) img {
+    width: 16px;
+    height: 16px;
+}
+
+header > div:nth-child(2) > div:nth-child(4) {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+    background: white;
+    border: 1px solid #9CB9D3;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+header > div:nth-child(2) > div:nth-child(4) input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 13px;
+}
+
+header > div:nth-child(2) > div:nth-child(5) {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: white;
+    border: 1px solid #9CB9D3;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+header > div:nth-child(2) > div:nth-child(5) input {
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 13px;
+    width: 150px;
+}
+
+header > div:nth-child(3) {
+    background: linear-gradient(to bottom, #DEE8F3 0%, #F4F8FB 100%);
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-top: 1px solid #C7DAE8;
+}
+
+header > div:nth-child(3) p {
+    font-size: 12px;
+    color: #003d5c;
+    margin: 0;
+}
+
+#start {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    background: linear-gradient(#f5f8fc, #EAEEF3);
+    border: 1px solid #9CB9D3;
+    padding: 3px 12px;
+    border-radius: 2px;
+    min-width: 50px;
+}
+
+#start button img {
+    width: 14px;
+    height: 14px;
+}
+
+#bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    background: linear-gradient(to bottom, #D8E5F0 0%, #C0D8EA 100%);
+    border: 1px solid #9CB9D3;
+    padding: 3px 12px;
+    border-radius: 2px;
+    min-width: 80px;
+}
+
+#bar p {
+    font-size: 12px;
+    color: #003d5c;
+    margin: 0;
+    font-weight: 300;
+}
+
+#bar button img {
+    width: 16px;
+    height: 16px;
+}
+
+#navegation {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(#f5f8fc, #EAEEF3);
+    border: 1px solid #9CB9D3;
+    padding: 3px 12px;
+    border-radius: 2px;
+    min-width: 200px;
+}
+
+#navegation button img {
+    width: 14px;
+    height: 14px;
+}
+
+button {
+    background: #EAEEF3;
+    border: 1px solid #C4CEDB;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+
+button:hover {
+    background: #DDE5F0;
+    box-shadow: 0 0 0 1px #B3C0D3;
+}
+
+button:active {
+    background: #CBD7EB;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.25);
+    border-color: #9CAAC4;
+}
+
+button img[alt="Deployment"] {
+    width: 12px;
+    height: 12px;
+}
+
+button img[alt="look for"] {
+    width: 16px;
+    height: 16px;
+}
+
+button img[alt="Reload"] {
+    width: 16px;
+    height: 16px;
+}
+
+button img[alt="mistaque"] {
+    width: 16px;
+    height: 16px;
+}
+
+div img[alt=""] {
+    width: 16px;
+    height: 16px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #F4F8FB 0%, #DEE8F3 100%);
+    border-top: 1px solid #C7DAE8;
+    z-index: 1000;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+}
+
+#footer p {
+    font-size: 11px;
+    color: #003d5c;
+    margin: 0;
+}
+
+#footer button {
+    padding: 2px 4px;
+}
+
+#footer button img {
+    width: 14px;
+    height: 14px;
+}
