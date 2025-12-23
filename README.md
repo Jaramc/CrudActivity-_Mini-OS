@@ -1,20 +1,26 @@
-# Mini Windows 7 
+# 🖥️ CrudActivity - Mini OS (Windows 7 Simulator)
 
-# Team Members
+Un proyecto educativo que simula un sistema operativo estilo Windows 7 con múltiples aplicaciones web interactivas.
+
+## 👥 Equipo
 
 - Ximena Jaramillo Cárdenas  
 - Andreina Arevalo Pidiache  
 - Sebastián Montaño Ramírez  
 - Ulith Giraldo Echavarría  
 
-# Project Description
+## 📋 Descripción del Proyecto
 
-This mini operating system replicates several classic Windows 7 applications: an image gallery, a notepad, a video player, a web browser, and a calculator.
+Este mini sistema operativo replica varias aplicaciones clásicas de Windows 7: una galería de imágenes, un bloc de notas, un reproductor de video, un navegador web y una calculadora.
 
-All applications are built using HTML and CSS, and include a header bar with the classic minimize, maximize, and close buttons, simulating the look of Windows 7 windows.  
-The most functional application is the calculator, which can add, subtract, multiply, and divide. Its logic is implemented using a separate JavaScript file. Some buttons in the different apps are purely visual (mocked) and do not have any functionality.
+Todas las aplicaciones están construidas con HTML y CSS, e incluyen una barra de título con los botones clásicos de minimizar, maximizar y cerrar, simulando la apariencia de las ventanas de Windows 7.
 
-The video player includes a sample trailer, the gallery displays several images (mainly memes), and in the notepad you can type freely, although there is no option to save the text.
+**Características principales:**
+- ✅ **Calculadora funcional** - Suma, resta, multiplicación y división (JavaScript)
+- 🎬 **Reproductor de video** - Con controles y video de demostración
+- 🖼️ **Galería de imágenes** - Visualización en grid con navegación
+- 📝 **Bloc de notas** - Editor de texto libre (CRUD básico)
+- 🌐 **Navegador simulado** - Interfaz estilo Explorer con barra de búsqueda
 
 # List of Applications
 
