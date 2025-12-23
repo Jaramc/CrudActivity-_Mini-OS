@@ -1,0 +1,23 @@
+{
+  "name": "CrudActivity-Mini-OS",
+  "version": "1.0.0",
+  "description": "Un simulador de sistema operativo Windows 7 con aplicaciones web interactivas",
+  "main": "index.html",
+  "scripts": {
+    "start": "Abre index.html en tu navegador"
+  },
+  "keywords": [
+    "windows-7",
+    "simulador",
+    "mini-os",
+    "crud",
+    "web-apps"
+  ],
+  "authors": [
+    "Ximena Jaramillo Cárdenas",
+    "Andreina Arevalo Pidiache",
+    "Sebastián Montaño Ramírez",
+    "Ulith Giraldo Echavarría"
+  ],
+  "license": "MIT"
+}
