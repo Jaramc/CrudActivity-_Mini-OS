@@ -1,0 +1,16 @@
+{
+  "name": "CrudActivity - Mini OS",
+  "description": "Un simulador de Windows 7 con aplicaciones web interactivas",
+  "documentationUrl": "https://github.com/tuusuario/CrudActivity-_Mini-OS-main/blob/develops/README.md",
+  "homepage": "https://github.com/tuusuario/CrudActivity-_Mini-OS-main",
+  "keywords": [
+    "windows-7",
+    "simulador",
+    "mini-os",
+    "crud",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "license": "MIT"
+}
