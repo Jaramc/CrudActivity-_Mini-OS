@@ -1,0 +1,9 @@
+/* Desktop Themes */
+body.theme-invitado {
+    background: radial-gradient(circle at 20% 20%, #fef9e7, #f9e79f 45%, #f5c469 75%, #d98825 100%);
+}
+
+body.theme-gamer {
+    background: radial-gradient(circle at 30% 30%, #1b2735, #090a0f 55%, #040608 100%),
+        linear-gradient(135deg, rgba(0, 200, 255, 0.35), rgba(255, 0, 200, 0.25));
+}

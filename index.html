@@ -21,6 +21,45 @@
     <!-- Container for iframes -->
     <div id="iframe-container"></div>
 
+    <!-- Start Menu Toggle -->
+    <input type="checkbox" id="start-menu-toggle" class="start-menu-toggle">
+    
+    <!-- Start Menu -->
+    <div class="start-menu">
+        <div class="start-menu-left">
+            <a href="apps/app1/Browser.html" class="start-item">
+                <img src="apps/imagenesindex/iexplore_32528.png" alt="Browser">
+                <span>Internet Explorer</span>
+            </a>
+            <a href="apps/app2/calculadora.html" class="start-item">
+                <img src="apps/imagenesindex/calculadora.png" alt="Calculator">
+                <span>Calculator</span>
+            </a>
+            <a href="apps/app3/galery.html" class="start-item">
+                <img src="apps/imagenesindex/imageres fotos_72.png" alt="Gallery">
+                <span>Gallery</span>
+            </a>
+            <a href="apps/app4/notes.html" class="start-item">
+                <img src="apps/imagenesindex/block notepad_2.png" alt="Notes">
+                <span>Notepad</span>
+            </a>
+            <a href="apps/app5/video.html" class="start-item">
+                <img src="apps/imagenesindex/video_icon.png" alt="Video">
+                <span>VLC Media Player</span>
+            </a>
+        </div>
+        <div class="start-menu-right">
+            <div class="start-user-info">
+                <div class="start-user-avatar admin-bg">A</div>
+                <span class="start-user-name">Admin</span>
+            </div>
+            <div class="start-actions">
+                <a href="login.html" class="start-action-item">Cambiar de usuario</a>
+                <a href="login.html" class="start-action-item">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
+
     <div id="icons">
 
         <a href="#"><img src="apps/imagenesindex/encarta.png" alt="encarta">
@@ -77,7 +116,7 @@
 
     <footer>
         <div id="footer">
-            <button class="menu"><img src="apps/imagenesindex/windows_1.png" alt="Windows"></button>
+            <label for="start-menu-toggle" class="menu"><img src="apps/imagenesindex/windows_1.png" alt="Windows"></label>
             <button><img src="apps/imagenesindex/musica.png" alt="Audio"></button>
             <button onclick="openApp('apps/app5/video.html', 'VLC Media Player')"><img src="apps/imagenesindex/video_icon.png" alt="Video"></button>
             <button onclick="openApp('apps/app3/galery.html', 'Gallery')"><img src="apps/imagenesindex/imageres fotos_72.png" alt="Gallery"></button>

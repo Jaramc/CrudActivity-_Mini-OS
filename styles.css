@@ -199,3 +199,132 @@ footer {
     background: rgba(173, 216, 230, 0.3);
     border: 1px rgba(173, 216, 230, 0.5);
 }
+
+/* Start Menu Styles */
+.start-menu-toggle {
+    display: none;
+}
+
+.start-menu {
+    position: fixed;
+    bottom: 48px;
+    left: 0;
+    width: 520px;
+    height: 520px;
+    background: linear-gradient(to bottom, #f2f6fa 0%, #dae6f0 100%);
+    border: 1px solid #6d94b8;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 1100;
+}
+
+.start-menu-toggle:checked ~ .start-menu {
+    display: flex;
+}
+
+.start-menu-left {
+    flex: 1;
+    background: linear-gradient(to bottom, #ffffff 0%, #f5f8fb 100%);
+    padding: 10px 0;
+    overflow-y: auto;
+    border-right: 1px solid #d0dce6;
+}
+
+.start-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    transition: background 0.15s ease;
+}
+
+.start-item:hover {
+    background: linear-gradient(to right, #e8f1f8 0%, #d9e8f5 100%);
+}
+
+.start-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.start-menu-right {
+    width: 200px;
+    background: linear-gradient(to bottom, #e8f0f7 0%, #d3e2f0 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 16px;
+}
+
+.start-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c5d7e6;
+}
+
+.start-user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-bg {
+    background: linear-gradient(135deg, #667eea 0%, #4a5ecc 100%);
+}
+
+.guest-bg {
+    background: linear-gradient(135deg, #f093fb 0%, #c676d8 100%);
+}
+
+.gamer-bg {
+    background: linear-gradient(135deg, #fa709a 0%, #e85a7a 100%);
+}
+
+.start-user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.start-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.start-action-item {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: background 0.15s ease;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+}
+
+.start-action-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #b8d0e5;
+}
+
+#footer label.menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
